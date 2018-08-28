@@ -1,3 +1,6 @@
+/*
+time:20180828
+*/
 #include <stdio.h>
 
 int add(int a, int b)
