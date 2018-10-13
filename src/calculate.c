@@ -189,6 +189,8 @@ char *deal_bracket(char *str)
         }
     }
     str_append(&dst, temp);
+
+    str_free(dst_temp);
     return dst;
 }
 
@@ -201,8 +203,10 @@ int main()
     char *p = deal_bracket(a);
     printf("bracket  = %s\n", p);
     char *pp = deal_mul_div(p);
+    str_free(p);
     printf("mul_div  = %s\n", pp);
     int ppp = deal_add_sub(pp);
+    str_free(pp);
     printf("result   = %d\n", ppp);
 
     return 0;

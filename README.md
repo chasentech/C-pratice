@@ -8,6 +8,8 @@ data:20180809
  -- 位操作 
  - calendar.c
  -- 简单日历
+ calculate.c
+ -- 数学表达式解析
  - factorial.c
  -- 大数阶乘
  - joseph.c
